@@ -8,6 +8,6 @@
 #
 
 execute "copypem" do
-  command "cp /etc/chef/*.pem /vagrant"
+  command "cp #{node['chefpem']['path']}/*.pem /vagrant"
   action :run
 end
