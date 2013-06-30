@@ -14,5 +14,5 @@ bash "copypem" do
   cwd "/"
   code <<-EOF
     cp #{node['chefpem']['path']}/*.pem /vagrant/pem
-  EOF 
+  EOF
 end
